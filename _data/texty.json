@@ -1,0 +1,67 @@
+{
+  "hero_nadpis": "Výkopové práce tam, kam veľký bager nevojde",
+  "hero_text": "Kopeme pásovými minibagrami. Menšie výkopy, úzke dvory, záhrady a priestory medzi múrmi, kde by veľký stroj narobil viac škody ako úžitku.",
+  "uvod": "Hlavnou činnosťou firmy sú výkopové práce menšieho rozsahu a v priestoroch nedostupných pre veľké mechanizmy. Realizujú sa strojnými mechanizmami, a to pásovými minibagrami.",
+  "prace": [
+    "základové ryhy a pätky",
+    "ryhy pre vodu, kanalizáciu a ďalšie prípojky",
+    "výkopy vo svahu",
+    "nakladanie zeminy na vyklápacie auto a odvoz",
+    "zahrnutie a úprava terénu po výkope"
+  ],
+  "ryha_text": "Hĺbkový dosah je až 2,5 m a šírka ryhy závisí od použitej výkopovej lopaty.",
+  "lopaty": [
+    {
+      "cm": 25,
+      "popis": "Najužšia ryha – prípojky a káble, minimum vykopanej zeminy."
+    },
+    {
+      "cm": 40,
+      "popis": "Ryhy pre potrubie a základy menších stavieb."
+    },
+    {
+      "cm": 50,
+      "popis": "Základové pásy a širšie ryhy."
+    },
+    {
+      "cm": 60,
+      "popis": "Najširšia zubová lopata – základy a šachty."
+    },
+    {
+      "cm": 100,
+      "popis": "Bezzubá nakladacia a planírovacia lopata: nakladanie zeminy a úprava terénu.",
+      "planirovacia": true
+    }
+  ],
+  "vyhody": [
+    {
+      "nadpis": "Prídeme na vozíku za autom",
+      "text": "Hmotnosť strojov je od 1,4 do 2,0 tony, čo umožňuje ich prepravu na prívesnom vozíku za automobilom. Doprava je tak rýchla, bezpečná a efektívna, a to znamená, že pre zákazníka lacná.",
+      "foto": "preprava-na-voziku.jpg",
+      "alt": "Minibager na prívesnom vozíku za terénnym autom"
+    },
+    {
+      "nadpis": "Zemina rovno na auto",
+      "text": "Zeminu je možné hneď pri kopaní nakladať na vyklápacie auto a vyvážať. Ďalšou výhodou týchto strojov je, že stroj môže ukladať vykopanú zeminu za seba.",
+      "foto": "nakladanie-zeminy.jpg",
+      "alt": "Minibager nakladá zeminu na vyklápacie nákladné auto"
+    },
+    {
+      "nadpis": "Kolmé ryhy aj vo svahu",
+      "text": "Jeden z našich strojov má zvýšenú svahovú dostupnosť systémom nakláňania kabíny. Tento systém umožňuje hĺbenie základových rýh aj vo svahovitom teréne, pričom sú vykopané kolmo na vodorovnú rovinu, čo je dôležité pre statiku stavby.",
+      "schema": true
+    },
+    {
+      "nadpis": "Rýchlejšie ako ručne",
+      "text": "V porovnaní s ručným kopaním je výkop realizovaný rýchlo a efektívne, čo umožňuje rýchle uloženie inžinierskych sietí a tým aj predchádzanie závalom už vykopaných jám a rýh.",
+      "foto": "pripojka-ryha.jpg",
+      "alt": "Ryha s uloženou žltou plynovou prípojkou a nopovou fóliou"
+    },
+    {
+      "nadpis": "Po sebe aj zahrnieme",
+      "text": "V zásade je strojom možné zahrnúť a upraviť do pôvodného stavu všetko, čo sa ním vykopalo.",
+      "foto": "uprava-terenu.jpg",
+      "alt": "Úprava terénu po výkopoch pred rodinnými domami"
+    }
+  ]
+}

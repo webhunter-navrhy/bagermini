@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ titulek or site.nazev }}</title>
+<meta name="description" content="{{ popis or site.popis }}">
+{% if site.navrh or noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
+<meta name="theme-color" content="{{ site.theme_color }}">
+<link rel="canonical" href="{{ site.url }}{{ cesta or '' }}">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="sk_SK">
+<meta property="og:title" content="{{ titulek or site.nazev }}">
+<meta property="og:description" content="{{ popis or site.popis }}">
+<meta property="og:url" content="{{ site.url }}{{ cesta or '' }}">
+{% if og_url %}<meta property="og:image" content="{{ og_url }}">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">{% endif %}
+<link rel="preload" href="{{ base }}fonts/Archivo-300-700-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{ asset('css/fonts.css') }}">
+<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+{% block head %}{% endblock %}
+{% if jsonld %}<script type="application/ld+json">{{ jsonld|safe }}</script>{% endif %}
+</head>
+<body>
+<a class="skip" href="#obsah">Preskočiť na obsah</a>
+<header class="hlavicka">
+  <div class="wrap hlavicka-in">
+    <a href="{{ url('') }}" class="logo"><img src="{{ base }}{{ site.logo }}" alt="Bager-mini" width="170" height="40"></a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="menu"><span></span><span class="sr">Menu</span></button>
+    <nav id="menu" aria-label="Hlavná navigácia">
+      {% for n in site.nav %}<a href="{{ n.href }}">{{ n.text }}</a>{% endfor %}
+      <a class="nav-tel" href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a>
+    </nav>
+  </div>
+</header>
+<div class="hlbkomer" aria-hidden="true">
+  <span class="hlbkomer-stupnica"></span>
+  <span class="hlbkomer-ukazovatel"><span class="hlbkomer-hodnota">0,00 m</span></span>
+</div>
+<main id="obsah">
+{% block obsah %}{% endblock %}
+</main>
+<script src="{{ asset('js/main.js') }}" defer></script>
+</body>
+</html>

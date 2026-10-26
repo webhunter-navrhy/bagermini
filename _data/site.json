@@ -1,0 +1,34 @@
+{
+  "slug": "bagermini",
+  "nazev": "Bager-mini – Ing. Ján Straka",
+  "nazev_kratky": "Bager-mini",
+  "url": "https://webhunter-navrhy.github.io/bagermini/",
+  "base": "/bagermini/",
+  "lang": "sk",
+  "popis": "Výkopové práce pásovými minibagrami v Prešove: základové ryhy, prípojky, nakladanie a odvoz zeminy aj v miestach, kam veľký bager nevojde.",
+  "navrh": true,
+  "domena": "",
+  "og_image": "minibager-medzi-stenami.jpg",
+  "logo": "logo.svg",
+  "logo_svetle": "logo-svetle.svg",
+  "theme_color": "#eaf4fb",
+  "typ": "HomeAndConstructionBusiness",
+  "ico": "43055702",
+  "kontakt": {
+    "meno": "Ing. Ján Straka",
+    "email": "bager-mini@bager-mini.sk",
+    "telefon": "+421 905 270 155",
+    "adresa": {"ulice": "Jánošíkova 8", "psc": "080 01", "mesto": "Prešov", "zeme": "SK"}
+  },
+  "oteviraci_doba": [],
+  "sameas": [],
+  "cenove_rozpeti": "",
+  "formular": {"endpoint": "", "demo": true, "predmet": "Dopyt z webu bager-mini.sk"},
+  "nav": [
+    {"text": "Výkopy", "href": "#vykopy"},
+    {"text": "Šírka ryhy", "href": "#ryha"},
+    {"text": "Výhody", "href": "#vyhody"},
+    {"text": "Galéria", "href": "#galeria"},
+    {"text": "Kontakt", "href": "#kontakt"}
+  ]
+}

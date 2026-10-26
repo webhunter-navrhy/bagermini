@@ -1,0 +1,89 @@
+{
+  "slug": "bagermini",
+  "zdroj_url": "http://www.bager-mini.sk",
+  "firma": "Bager-mini – Ing. Ján Straka",
+  "obor": [
+    "Výkopové a zemné práce minibagrom"
+  ],
+  "ico": "43055702",
+  "ares": null,
+  "kontakty": {
+    "email": "bager-mini@bager-mini.sk",
+    "telefon": "+421 905 270 155",
+    "adresa": "Jánošíkova 8, 080 01 Prešov"
+  },
+  "logo": null,
+  "barvy": {
+    "css_promenne": {},
+    "z_css": [
+      "#2071a2",
+      "#baddf1",
+      "#df4d4d"
+    ],
+    "z_loga": [],
+    "theme_color": null,
+    "doporucene": [
+      "#2071a2",
+      "#baddf1"
+    ]
+  },
+  "fotky": "24 fotiek 800×600 z http://www.bager-mini.sk/images/Galeria/ (foto24 = duplikát vynechaný), viz foto/zdroje.txt",
+  "fakta": [
+    {
+      "fakt": "Hlavnou činnosťou sú výkopové práce menšieho rozsahu a v priestoroch nedostupných pre veľké mechanizmy, pásovými minibagrami",
+      "zdroj": "http://www.bager-mini.sk/"
+    },
+    {
+      "fakt": "Hĺbkový dosah až 2,5 m",
+      "zdroj": "http://www.bager-mini.sk/vyhody.php"
+    },
+    {
+      "fakt": "Lopaty 25, 40, 50, 60 cm + 100 cm bezzubá nakladacia a planírovacia",
+      "zdroj": "http://www.bager-mini.sk/vyhody.php"
+    },
+    {
+      "fakt": "Zeminu možno pri kopaní nakladať na vyklápacie auto a vyvážať; stroj ukladá zeminu za seba",
+      "zdroj": "http://www.bager-mini.sk/vyhody.php"
+    },
+    {
+      "fakt": "Jeden stroj má systém nakláňania kabíny – ryhy vo svahu kolmo na vodorovnú rovinu",
+      "zdroj": "http://www.bager-mini.sk/vyhody.php"
+    },
+    {
+      "fakt": "Hmotnosť strojov 1,4–2,0 t, preprava na prívesnom vozíku za automobilom",
+      "zdroj": "http://www.bager-mini.sk/vyhody.php"
+    },
+    {
+      "fakt": "Strojom možno zahrnúť a upraviť do pôvodného stavu všetko, čo sa vykopalo",
+      "zdroj": "http://www.bager-mini.sk/vyhody.php"
+    },
+    {
+      "fakt": "Ing. Ján Straka, Jánošíkova 8, 080 01 Prešov, +421 905 270 155, bager-mini@bager-mini.sk",
+      "zdroj": "http://www.bager-mini.sk/kontakt.php"
+    },
+    {
+      "fakt": "IČO 43055702, obor Zemné práce",
+      "zdroj": "https://www.zoznam.sk/firma/2664328/Straka-Jan--Ing---Presov"
+    }
+  ],
+  "chybi": [
+    "novšie fotky strojov a hotových prác (súčasné majú 800×600 px)",
+    "oblasť pôsobenia (obce/okres), ktorú chce uvádzať",
+    "aké stroje má dnes (typy, počet)",
+    "či chce na web cenník alebo „cena dohodou“",
+    "fotka/portrét pána Straku (voliteľné)"
+  ],
+  "popis_webu": "Bager-mini - Výkopové práce.",
+  "mesto": "Prešov",
+  "ton": "vecný, technický, krátky; Slovensko, vykanie",
+  "brand": {
+    "logo": "static/logo.svg (potrace z images/Bager-mini.jpg), static/logo-svetle.svg",
+    "barvy": [
+      "#2071A2",
+      "#BADDF1",
+      "#1A1A1A",
+      "#312D29"
+    ],
+    "zdroj": "http://www.bager-mini.sk/css/styles.css"
+  }
+}

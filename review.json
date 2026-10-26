@@ -1,0 +1,17 @@
+{
+  "znamka": 8,
+  "slabiny": [
+    "Kontakt „Povedzte nám, čo treba vykopať“ (PC aj mobil, buňka 9/10): tlačidlo „Odoslať dopyt“ je biele na tmavom podklade, nie v klientovej modrej, ako žiadalo minulé kolo. Oprava: tlačidlo dať do #2071A2 s bielym textom a rovnakú modrú použiť na focus stav polí formulára.",
+    "Celá stránka: stále sa striedajú dva odtiene piesku. Sekcia „Prečo minibager“ (PC buňky 5–7, mobil 4–7) má tmavší piesok, ostatné sekcie svetlý krém. Oprava: nechať jeden neutrálny krémový podklad a sekciu výhod oddeliť tenkou linkou alebo pozadím #BADDF1 za schémou, nie druhým odtieňom piesku.",
+    "PC 1440, buňky 1–4: pod zoznamom „S čím pomôžeme“ zostáva asi 150 px prázdna plocha nad deliacou čiarou a pod schémou ryhy je ďalší prázdny pás pred „Prečo minibager“. Vodorovná čiara spodku hero navyše stále prechádza cez celú šírku a na mobile cez spodok fotky. Oprava: svislé odsadenie týchto dvoch sekcií zmenšiť na ~120 px a čiaru ukončiť na hrane fotky alebo ju v hero vypustiť."
+  ],
+  "zavazne": [],
+  "silne": [
+    "Silný koncept z oboru: hĺbkomer vľavo (−0,50 m až „−2,50 m · dno výkopu“) vedie celou stránkou a funguje ako rez výkopom. Výber šírky lopaty 25–100 cm s rezom v mierke je z faktov v briefe.",
+    "Brand je opravený: modrá #2071A2 je na hlavnom CTA „Zavolať“, na aktívnej šírke ryhy a na značkách hĺbky. #BADDF1 nesie hero a schémy, logo Bagermini je vľavo v hlavičke.",
+    "Fotky výhod v zig-zagu majú na PC ~45 % šírky a hero fotka nesie prvú obrazovku. Galéria je zúžená na 9 snímok strojov pri práci (1 veľká) s tlačidlom „Zobraziť všetky fotky (24)“ a v podnadpise už nie sú „haly“.",
+    "Obsah sedí na brief bez vymyslených čísel: 1,4–2,0 t, 2,5 m, lopaty, nakláňanie kabíny a kontakty. QA bez chýb a bez pretekania na 6 šírkach, mobil čitateľný s veľkými dotykovými cieľmi."
+  ],
+  "verdikt": "odeslat – minulé výtky (modrá, rytmus a fotky, galéria a „haly“) sú v podstate opravené a závažná vada nie je. Pred odoslaním ešte dať „Odoslať dopyt“ do #2071A2 a zjednotiť dva odtiene piesku.",
+  "_hash": "af6b90f009878f37d44cd4e6241645515f1841b5"
+}

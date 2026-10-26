@@ -1,0 +1,173 @@
+{% extends "_base.html" %}
+{% set titulek = 'Výkopové práce minibagrom Prešov | Bager-mini – Ing. Ján Straka' %}
+{% set cesta = '' %}
+{% set t = data.texty %}
+{% set k = site.kontakt %}
+{% block obsah %}
+<section class="hero" data-hlbka="0">
+  <div class="wrap hero-in">
+    <div class="hero-text">
+      <p class="hero-firma">Ing. Ján Straka · Prešov</p>
+      <h1>{{ t.hero_nadpis }}</h1>
+      <p class="hero-perex">{{ t.hero_text }}</p>
+      <div class="hero-akcie">
+        <a class="tlacidlo" href="tel:{{ k.telefon|replace(' ', '') }}">Zavolať {{ k.telefon }}</a>
+        <a class="odkaz-sipka" href="#kontakt">Napísať dopyt</a>
+      </div>
+    </div>
+    <figure class="hero-foto">
+      {{ img('minibager-medzi-stenami.jpg', 'Pásový minibager kope ryhu medzi múrmi novostavby', sizes='(min-width: 64rem) 34rem, 92vw') }}
+    </figure>
+  </div>
+  <div class="horizont"><span class="kota wrap">±0,00 terén</span></div>
+</section>
+
+<section class="sekcia vrstva-1" id="vykopy" data-hlbka="0.5">
+  <div class="wrap uvod">
+    <p class="kota">−0,50 m</p>
+    <div class="uvod-text">
+      <h2>Menšie výkopy, presne a bez zbytočnej šírky</h2>
+      <p class="velky">{{ t.uvod }}</p>
+    </div>
+    <div class="uvod-prace">
+      <h3>S čím pomôžeme</h3>
+      <ul role="list">
+        {% for p in t.prace %}<li>{{ p }}</li>{% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sekcia vrstva-2" id="ryha" data-hlbka="1.2">
+  <div class="wrap ryha">
+    <p class="kota">−1,20 m</p>
+    <div class="ryha-hlava">
+      <h2>Akú širokú ryhu potrebujete?</h2>
+      <p>{{ t.ryha_text }} Vyberte lopatu a pozrite sa na rez v mierke.</p>
+    </div>
+    <div class="ryha-plocha">
+      <div class="lopaty" role="radiogroup" aria-label="Šírka lopaty">
+        {% for l in t.lopaty %}
+        <button type="button" role="radio" aria-checked="{{ 'true' if l.cm == 40 else 'false' }}" data-cm="{{ l.cm }}" data-popis="{{ l.popis }}"{% if l.get("planirovacia") %} data-plan="1"{% endif %}><span>{{ l.cm }}</span> cm</button>
+        {% endfor %}
+      </div>
+      <figure class="rez">
+        <svg viewBox="0 0 640 400" role="img" aria-labelledby="rez-popis">
+          <title id="rez-popis">Rez ryhou: šírka podľa lopaty, hĺbka až 2,5 m</title>
+          <defs>
+            <pattern id="srafa" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="10" stroke="#c9b496" stroke-width="1"/></pattern>
+          </defs>
+          <rect x="0" y="48" width="640" height="352" fill="url(#srafa)"/>
+          <rect x="0" y="48" width="640" height="34" fill="#d9c7ad" opacity=".55"/>
+          <line x1="0" y1="48" x2="640" y2="48" class="rez-teren"/>
+          <g class="rez-ryha" data-plan="0">
+            <rect class="rez-vykop" x="256" y="48" width="128" height="320"/>
+          </g>
+          <g class="rez-kota-hlbka">
+            <line x1="600" y1="48" x2="600" y2="368"/><line x1="590" y1="48" x2="610" y2="48"/><line x1="590" y1="368" x2="610" y2="368"/>
+            <text x="588" y="214" text-anchor="end">2,5 m</text>
+          </g>
+          <line x1="30" y1="368" x2="610" y2="368" class="rez-max"/>
+          <text x="40" y="388" class="rez-max-text">max. hĺbkový dosah</text>
+          <g class="rez-kota-sirka">
+            <line class="ks-ciara" x1="256" y1="26" x2="384" y2="26"/>
+            <text class="ks-text" x="320" y="18" text-anchor="middle">40 cm</text>
+          </g>
+          <text x="12" y="40" class="rez-popisok">terén</text>
+        </svg>
+        <figcaption class="rez-popis" aria-live="polite">Ryhy pre potrubie a základy menších stavieb.</figcaption>
+      </figure>
+      <figure class="ryha-foto">
+        {{ img('vykopove-lopaty.jpg', 'Výkopové lopaty rôznych šírok pripravené pri stroji', sizes='(min-width: 64rem) 22rem, 92vw') }}
+        <figcaption>Výkopové lopaty – šírku vyberáme podľa toho, čo sa do ryhy ukladá.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="sekcia vrstva-3" id="vyhody" data-hlbka="1.8">
+  <div class="wrap">
+    <p class="kota">−1,80 m</p>
+    <h2 class="vyhody-nadpis">Prečo minibager</h2>
+    <div class="vyhody">
+      {% for v in t.vyhody %}
+      <article class="vyhoda{% if loop.index is even %} vyhoda-opak{% endif %}">
+        <div class="vyhoda-text">
+          <h3>{{ v.nadpis }}</h3>
+          <p>{{ v.text }}</p>
+        </div>
+        {% if v.get("schema") %}
+        <figure class="vyhoda-schema">
+          <svg viewBox="0 0 420 300" role="img" aria-labelledby="svah-t">
+            <title id="svah-t">Schéma: stroj stojí vo svahu, kabína je naklonená do zvislej polohy a ryha je kolmá na vodorovnú rovinu</title>
+            <path d="M0 250 L420 140 L420 300 L0 300 Z" fill="#e3d3bf"/>
+            <line x1="0" y1="250" x2="420" y2="140" class="sv-teren"/>
+            <g transform="rotate(-14.7 250 182)">
+              <rect x="190" y="170" width="120" height="22" rx="11" class="sv-pas"/>
+            </g>
+            <rect x="214" y="78" width="66" height="84" rx="10" class="sv-kabina"/>
+            <rect x="226" y="90" width="42" height="40" rx="5" fill="#eaf4fb"/>
+            <path d="M214 130 L150 92 L120 172" class="sv-rameno"/>
+            <rect x="104" y="172" width="32" height="26" class="sv-lopata"/>
+            <line x1="120" y1="60" x2="120" y2="290" class="sv-olovnica"/>
+            <line x1="40" y1="290" x2="220" y2="290" class="sv-vodorovna"/>
+            <path d="M120 274 h16 v16" class="sv-uhol"/>
+            <text x="142" y="282" class="sv-text">90°</text>
+            <text x="30" y="40" class="sv-text">kabína zvislo</text>
+            <text x="250" y="240" class="sv-text">svah</text>
+          </svg>
+          <figcaption>Zjednodušená schéma nakláňania kabíny</figcaption>
+        </figure>
+        {% else %}
+        <figure class="vyhoda-foto">{{ img(v.foto, v.alt, sizes='(min-width: 64rem) 30rem, 92vw') }}</figure>
+        {% endif %}
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sekcia vrstva-4" id="galeria" data-hlbka="2.2">
+  <div class="wrap">
+    <p class="kota">−2,20 m</p>
+    <div class="galeria-hlava">
+      <h2>Zo zákaziek</h2>
+      <p>Základy, prípojky, záhrady aj stiesnené dvory. Fotky priamo z našich zákaziek.</p>
+    </div>
+    <ul class="galeria" role="list">
+      {% for g in data.galeria %}
+      <li{% if loop.index > 9 %} class="galeria-dalsie" hidden{% endif %}><button type="button" class="galeria-polozka" data-index="{{ loop.index0 }}" data-full="{{ img_url(g.foto, 1280) }}" aria-label="Zväčšiť: {{ g.alt }}">{{ img((g.foto if loop.first else 'nahlady/' ~ g.foto), g.alt, sizes='(min-width: 72rem) 17rem, (min-width: 40rem) 30vw, 46vw') }}</button></li>
+      {% endfor %}
+    </ul>
+    <button type="button" class="galeria-viac">Zobraziť všetky fotky ({{ data.galeria|length }})</button>
+  </div>
+  <dialog class="lightbox" aria-label="Galéria">
+    <img src="" alt="" width="800" height="600">
+    <p class="lightbox-popis"></p>
+    <button type="button" class="lb-zavriet" aria-label="Zavrieť">×</button>
+    <button type="button" class="lb-pred" aria-label="Predchádzajúca fotka">‹</button>
+    <button type="button" class="lb-dalsia" aria-label="Ďalšia fotka">›</button>
+  </dialog>
+</section>
+
+<section class="kontakt" id="kontakt" data-hlbka="2.5">
+  <div class="wrap kontakt-in">
+    <p class="kota kota-svetla">−2,50 m · dno výkopu</p>
+    <div class="kontakt-info">
+      <img class="kontakt-logo" src="{{ base }}{{ site.logo_svetle }}" alt="Bager-mini" width="220" height="52" loading="lazy">
+      <h2>Povedzte nám, čo treba vykopať</h2>
+      <p>Pošlite pár slov o mieste a rozsahu prác, ozveme sa s termínom.</p>
+      <dl class="kontakt-udaje">
+        <div><dt>Telefón</dt><dd><a href="tel:{{ k.telefon|replace(' ', '') }}">{{ k.telefon }}</a></dd></div>
+        <div><dt>E-mail</dt><dd><a href="mailto:{{ k.email }}">{{ k.email }}</a></dd></div>
+        <div><dt>Adresa</dt><dd>{{ k.meno }}<br>{{ k.adresa.ulice }}, {{ k.adresa.psc }} {{ k.adresa.mesto }}</dd></div>
+      </dl>
+    </div>
+    {% include "_formular.html" %}
+  </div>
+  <footer class="paticka wrap">
+    <p>© {{ k.meno }} · IČO {{ site.ico }} · {{ k.adresa.mesto }}</p>
+    <p><a href="#obsah">Späť hore</a></p>
+  </footer>
+</section>
+{% endblock %}

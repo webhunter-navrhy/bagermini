@@ -1,0 +1,70 @@
+{
+  "url": "http://localhost:8791/bagermini/",
+  "ok": true,
+  "chyby": [],
+  "varovani": [
+    "Web má noindex (u ostrého webu pravděpodobně chyba)",
+    "Dotykové cíle <40 px na mobilu: 1× (např. a.skip \"Preskočiť na obsah\" 1×1)"
+  ],
+  "metriky": {
+    "sirky": {
+      "1440": {
+        "scrollWidth": 1440,
+        "pocet_pretekajicich": 0
+      },
+      "1280": {
+        "scrollWidth": 1280,
+        "pocet_pretekajicich": 0
+      },
+      "1024": {
+        "scrollWidth": 1024,
+        "pocet_pretekajicich": 0
+      },
+      "820": {
+        "scrollWidth": 820,
+        "pocet_pretekajicich": 0
+      },
+      "390": {
+        "scrollWidth": 390,
+        "pocet_pretekajicich": 0
+      },
+      "360": {
+        "scrollWidth": 360,
+        "pocet_pretekajicich": 0
+      }
+    },
+    "preneseno_PC_MB": 1.09,
+    "nejvetsi_obrazek_PC": {
+      "kB": 77,
+      "url": "http://localhost:8791/bagermini/img/uprava-terenu-640.webp"
+    },
+    "snimku_PC": 9,
+    "preneseno_mobil_MB": 1.3,
+    "nejvetsi_obrazek_mobil": {
+      "kB": 117,
+      "url": "http://localhost:8791/bagermini/img/uprava-terenu-800.webp"
+    },
+    "snimku_mobil": 10,
+    "seo": {
+      "title": "Výkopové práce minibagrom Prešov | Bager-mini – Ing. Ján Straka",
+      "description": "Výkopové práce pásovými minibagrami v Prešove: základové ryhy, prípojky, nakladanie a odvoz zeminy a",
+      "lang": "sk",
+      "h1": 1,
+      "jsonld": [
+        true
+      ],
+      "robots": "noindex, nofollow",
+      "og_image": "https://webhunter-navrhy.github.io/bagermini/og.jpg",
+      "bez_v": [],
+      "canonical": true,
+      "viewport": true
+    },
+    "maly_dotykovy_cil": 1,
+    "font_nadpis": "Archivo",
+    "font_text": "IBM Plex Mono",
+    "podstranky": {
+      "stranek": 1,
+      "obrazku": 39
+    }
+  }
+}
